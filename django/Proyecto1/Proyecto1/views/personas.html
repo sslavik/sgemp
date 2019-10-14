@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %} Personas en Django {% endblock %}
+
+{% block content %}
+
+<ul>
+    {% for persona in personas %}
+    <li>{{persona.nombre}} {{persona.apellido}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
