@@ -9,6 +9,8 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% load static %}
+    <script src="{% static 'scripts/utils.js' %}"></script>
 </head>
 
 <body>
@@ -22,17 +24,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="changeActive(this)" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/clientes">Clientes</a>
+                        <a class="nav-link" onclick="changeActive(this)" href="/clientes">Clientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/proveedores">Proveedores</a>
+                        <a class="nav-link" onclick="changeActive(this)" href="/proveedores">Proveedores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/productos">Productos</a>
+                        <a class="nav-link" onclick="changeActive(this)" href="/productos">Productos</a>
                     </li>
                 </ul>
                 <form class="form-inline mt-2 mt-md-0">
