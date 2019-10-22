@@ -14,4 +14,4 @@ def index(request):
 
     clientes = [p1, p2, p3, p4]
 
-    return render(request, "clientes/clientes.html", {"clientes": clientes})
+    return render(request, "clientes/clientes.html", {"clientes": clientes, "navCliente" : "active"})

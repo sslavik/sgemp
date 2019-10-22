@@ -9,6 +9,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/dashboard/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     {% load static %}
     <script src="{% static 'scripts/utils.js' %}"></script>
 </head>
@@ -25,16 +26,16 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" onclick="changeActive(this)" href="#">Home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="changeActive(this)" href="/clientes">Clientes</a>
+                    <li class="nav-item {{navCliente}}">
+                        <a class="nav-link" href="/clientes">Clientes</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="changeActive(this)" href="/proveedores">Proveedores</a>
+                    <li class="nav-item {{navProveedor}}">
+                        <a class="nav-link" href="/proveedores">Proveedores</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="changeActive(this)" href="/productos">Productos</a>
+                    <li class="nav-item {{navProducto}}">
+                        <a class="nav-link" href="/productos">Productos</a>
                     </li>
                 </ul>
                 <form class="form-inline mt-2 mt-md-0">
