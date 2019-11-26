@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from core import views  # Importamos las vistas de CORE Aquí
 
 urlpatterns = [
+    # Definimos donde se va a mostrar nuestra vista en la URL
+    path('', views.index, name="index"),
     path('admin/', admin.site.urls),
 ]

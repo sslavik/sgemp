@@ -1,0 +1,57 @@
+{% extends 'layout/index.html' %}
+
+
+{% block contact %}
+
+<!-- Contacto -->
+<section id="contacto" class="wrapper style1 fade-up">
+    <div class="inner">
+        <h2>Contacto</h2>
+        <p>Puedes contactar con nosotros por cualquier medio. Te solucionaremos tu duda de inmediato.</p>
+        <div class="split style1">
+            <section>
+                <form method="post" action="/contacto">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <div class="field half">
+                            <label for="email">Correo</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Mensanje</label>
+                            <textarea name="message" id="message" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value=Enviar Mensaje /></li>
+                    </ul>
+                </form>
+            </section>
+            <section>
+                <ul class="contact">
+                    <li>
+                        <h3>Correo</h3>
+                        <a href="mailto:goodstampa.ofi@gmail.com">goodstampa.ofi@gmail.com</a>
+                    </li>
+                    <li>
+                        <br>
+                    </li>
+                    <li>
+                        <h3>Redes Sociales</h3>
+                        <ul class="icons">
+                            <li><a href="" class="fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://fb.me/GoodStampa.Red" class="fa-facebook"><span
+                                        class="label">Facebook</span></a></li>
+                            <li><a href="" class="fa-instagram"><span class="label">Instagram</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
