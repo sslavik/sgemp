@@ -9,4 +9,4 @@ from django.shortcuts import render, HttpResponse
 
 
 def index(request):
-    return render(request, "core/layout/index.html")
+    return render(request, "core/home.html")
