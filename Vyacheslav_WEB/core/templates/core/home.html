@@ -1,0 +1,237 @@
+{% extends 'core/layout/index.html' %}
+
+{% load static %}
+
+{% block title %}Good Stampa | Digitalizate de forma sencilla con nosotros{% endblock %}
+
+{% block content %}
+<!-- Inicio -->
+<section id="inicio" class="wrapper style1 fullscreen fade-up">
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="{% static 'core/img/VideoPrueba.mov' %}" type="video/mp4">
+    </video>
+    <div class="inner">
+        <h1 class="logo_font">GOOD STAMPA</h1>
+        <h6>Tu marca más visible</h6>
+        <ul class="actions">
+            <li><a href="#quien" class="button scrolly">¿Que haceis?</a></li>
+            <li><a href="/wp" class="button scrolly">Demo</a></li>
+        </ul>
+    </div>
+</section>
+
+<!-- Quienes Somos -->
+<section id="quien" class="wrapper style3 fade-up">
+    <div class="inner">
+        <h2 class="logo_font">GOOD STAMPA ?</h2>
+        <p>El mundo digital avanza a pasos agigantados. Por ello, nosotros desarrollamos una estrategia con la
+            cual estaremos actualizados día a día con esta plataforma</p>
+        <div class="features">
+            <section>
+                <span class="icon major fa-code"></span>
+                <h3>Desarrollo Web / App</h3>
+                <!--Everything its build along your business-->
+                <p>Nos amoldamos a las necesidades de su negocio con nuestra alta capacidad en la programación
+                </p>
+            </section>
+            <section>
+                <span class="icon major fa-lock"></span>
+                <h3>Seguridad</h3>
+                <!--We offer a confident work-->
+                <p>Nos comprometemos a la protección y confidencialidad de sus datos</p>
+            </section>
+            <section>
+                <span class="icon major fa-cog"></span>
+                <h3>Configuración RRSS</h3> <!-- Templates ready to use and modify-->
+                <p>Organización y planificación de su negocio en las Redes Sociales</p>
+            </section>
+            <section>
+                <span class="icon major fa-desktop"></span>
+                <h3>Estadísticas</h3>
+                <!--Traking of your web page, social media, never was that easy-->
+                <p>Seguimiento en tiempo real de sus Redes Sociales, Página web y App</p>
+            </section>
+            <section>
+                <span class="icon major fa-chain"></span>
+                <h3>Fidelización</h3>
+                <!--easier to gain customers-->
+                <p>Aseguramos la satisfacción de los clientes además de la expansión de su negocio</p>
+            </section>
+            <section>
+                <span class="icon major fa-diamond"></span>
+                <h3>Servicio</h3>
+                <!--perfect coorperation-->
+                <p>Ofrecemos un trabajo profesional a la altura de su negocio y aprovechando al máximo nuestros
+                    recursos </p>
+            </section>
+        </div>
+        <ul class="actions">
+            <li><a href="#servicios" class="button scrolly">Servicios</a></li>
+        </ul>
+    </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios" class="wrapper style2 spotlights">
+    <section class="">
+        <a class="image"><img class="image_service" src="{% static 'core/img/Silver.png' %}" alt=""
+                data-position="top center" /></a>
+        <div class="content">
+            <div class="inner">
+                <h2>Redes Sociales</h2>
+                <span class="list"><input type="radio" checked disabled /><label />Creación y Preservación de
+                    RRSS</span><br>
+                <span class="list"><input type="radio" checked disabled /><label />Organización de Ofertas,
+                    Sorteos y Eventos</span><br>
+                <span class="list"><input type="radio" checked disabled /><label />Mínimo 2 publicaciones /
+                    Semanales</span><br>
+                <span class="list"><input type="radio" checked disabled /><label />Aumento Seguidores e
+                    Impresiones</span><br>
+                <span class="list"><input type="radio" checked disabled /><label />Fidelizar Clientes</span><br>
+                <ul class="actions">
+                    <li>
+                        <a class="button toggle">Complementos</a>
+                        <div id="box_service">
+                            <div>
+                                <h6>Complementos</h6>
+                                <span class="list"><input type="radio" checked disabled /><label />Sesión
+                                    fotográfica de su Negocio / Empresa</span><br>
+                                <span class="list"><input type="radio" checked disabled /><label />Promociones
+                                    de publicaciones</span><br>
+                                <span class="list"><input type="radio" checked disabled /><label />Diseño
+                                    Logotipo</span><br>
+                                <span class="list"><input type="radio" checked disabled /><label />Propuesta de
+                                    ofertas</span><br>
+                                <span class="list"><input type="radio" checked disabled /><label />Posibilidad
+                                    de incrementar promoción en publicaciones</span><br>
+                                <span class="list"><input type="radio" checked disabled /><label />Aumento
+                                    Interacción</span><br>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <a class="image"><img class="image_service" src="{% static 'core/img/Gold.png' %}" alt=""
+                data-position="top center" /></a>
+        <div class="content">
+            <div class="inner">
+                <h2>Redes Sociales + Página Web</h2>
+                <span class="list"><input type="radio" checked disabled /><label />Creación de Página
+                    web</span><br>
+                <span class="list"><input type="radio" checked disabled /><label />1 Año Mantenimiento
+                    Gratis</span><br>
+                <span class="list"><input type="radio" checked disabled /><label />Aumentar valor de su empresa
+                    en Internet</span><br>
+                <span class="list"><input type="radio" checked disabled /><label />Posicionamiento
+                    SEO</span><br>
+                <span class="list"><input type="radio" checked disabled /><label />E-Commerce adaptado a su
+                    negocio / empresa</span><br>
+                <ul class="actions">
+                    <li>
+                        <a class="button toggle">Complementos</a>
+                        <div id="box_service">
+                            <div>
+                                <h6>Complementos</h6>
+                                <span class="list"><input type="radio" checked disabled /><label />Un mínimo de
+                                    4 Sub-Paginas</span><br>
+                                <span class="list"><input type="radio" checked disabled /><label /></span><br>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <a class="image"><img class="image_service" src="{% static 'core/img/Platinum.png' %}" alt=""
+                data-position="top center" /></a>
+        <div class="content">
+            <div class="inner">
+                <h2>Redes Sociales + Página web + App</h2>
+                <span class="list"><input type="radio" checked disabled /><label />Creación de App Web / Android
+                    &amp; iOs</span><br>
+                <span class="list"><input type="radio" checked disabled /><label />E-Commerce Con App</span><br>
+                <span class="list"><input type="radio" checked disabled /><label />Promociones directamente a su
+                    cliente</span><br>
+                <span class="list"><input type="radio" checked disabled /><label />Facilidad de acceso para los
+                    clientes</span><br>
+                <span class="list"><input type="radio" checked disabled /><label />Totalmente personalizada para
+                    su negocio / empresa</span><br>
+                <ul class="actions">
+                    <li>
+                        <a class="button toggle">Complementos</a>
+                        <div id="box_service">
+                            <div>
+                                <h6>Complementos</h6>
+                                <span class="list"><input type="radio" checked disabled /><label />Notificar a
+                                    lo clientes de cambio de horario</span><br>
+                                <span class="list"><input type="radio" checked disabled /><label />Interacciones
+                                    del cliente</span><br>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+<!-- Contacto -->
+<section id="contacto" class="wrapper style1 fade-up">
+    <div class="inner">
+        <h2>Contacto</h2>
+        <p>Puedes contactar con nosotros por cualquier medio. Te solucionaremos tu duda de inmediato.</p>
+        <div class="split style1">
+            <section>
+                <form method="post" action="/contacto">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" />
+                        </div>
+                        <div class="field half">
+                            <label for="email">Correo</label>
+                            <input type="email" name="email" id="email" />
+                        </div>
+                        <div class="field">
+                            <label for="message">Mensanje</label>
+                            <textarea name="message" id="message" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value=Enviar Mensaje /></li>
+                    </ul>
+                </form>
+            </section>
+            <section>
+                <ul class="contact">
+                    <li>
+                        <h3>Correo</h3>
+                        <a href="mailto:goodstampa.ofi@gmail.com">goodstampa.ofi@gmail.com</a>
+                    </li>
+                    <li>
+                        <br>
+                    </li>
+                    <li>
+                        <h3>Redes Sociales</h3>
+                        <ul class="icons">
+                            <li><a href="" class="fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://fb.me/GoodStampa.Red" class="fa-facebook"><span
+                                        class="label">Facebook</span></a></li>
+                            <li><a href="" class="fa-instagram"><span class="label">Instagram</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

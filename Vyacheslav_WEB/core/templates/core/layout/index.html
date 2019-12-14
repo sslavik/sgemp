@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'core/css/main.css' %}" />
+	<link rel="stylesheet" href="{% static 'core/css/customized.css' %}" />
+	<noscript>
+		<link rel="stylesheet" href="{% static 'core/css/noscript.css' %}" /></noscript>
+	<link rel="stylesheet" href="." />
+</head>
+
+<body class="is-preload">
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<a id="logo" href="" title="GDSTMP"></a>
+			<nav>
+				<ul>
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#quien">¿Cómo Funcionamos?</a></li>
+					<li><a href="#servicios">Servicios</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+		{% block content %}{% endblock %}
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; GoodStampa. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">&lt;GSTMP &gt;</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="{% static 'core/js/jquery.min.js' %}"></script>
+	<script src="{% static 'core/js/jquery.scrollex.min.js' %}"></script>
+	<script src="{% static 'core/js/jquery.scrolly.min.js' %}"></script>
+	<script src="{% static 'core/js/browser.min.js' %}"></script>
+	<script src="{% static 'core/js/breakpoints.min.js' %}"></script>
+	<script src="{% static 'core/js/util.js' %}"></script>
+	<script src="{% static 'core/js/main.js' %}"></script>
+	<script src="{% static 'core/js/customized.js' %}"></script>
+	<script src="."></script>
+</body>
+
+</html>

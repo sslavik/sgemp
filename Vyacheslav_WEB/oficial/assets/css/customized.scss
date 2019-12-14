@@ -1,0 +1,218 @@
+// ELEMENTS
+//__________________
+
+
+// SIDEBAR
+//__________________
+#sidebar nav a:after {
+    background-image: -moz-linear-gradient(to right, #389dd8, #4eb771);
+    background-image: -webkit-linear-gradient(to right, #389dd8, #4eb771);
+    background-image: -ms-linear-gradient(to right, #389dd8, #4eb771);
+    background-image: linear-gradient(to right, #389dd8, #4eb771);
+    -moz-transition: max-width 0.2s ease;
+    -webkit-transition: max-width 0.2s ease;
+    -ms-transition: max-width 0.2s ease;
+    transition: max-width 0.2s ease;
+    max-width: 0;
+}
+#sidebar nav a:hover {
+    color: rgba($color: rgb(0, 61, 46), $alpha: 0.55);
+}
+// BACKGROUND SIDEBAR
+#sidebar {
+    background-color: #ffffff;
+}
+#sidebar nav a {
+    color: rgba($color: #000000, $alpha: 0.35);
+}
+#sidebar nav a.active {
+    color: #000;
+}
+
+//WRAPERS
+//__________________
+.wrapper.alt {
+    background-color: #1c3e38;
+}
+
+.wrapper.style1 {
+    background-color: #42a690;
+}
+
+.wrapper.style1-alt {
+    background-color: #338271;
+}
+
+.wrapper.style2 {
+    background-color: rgba(#fff, 0.1);
+}
+.wrapper.style2 .content {
+    background-color: #00191d;
+}
+
+.wrapper.style2-alt {
+    background-color: #3e945f;
+}
+
+.wrapper.style3 {
+    background-color: #4eb4b7;
+    background-image: -moz-linear-gradient(to bottom right, #4eb4b7, #006366);
+    background-image: -webkit-linear-gradient(to bottom right, #4eb4b7, #006366);
+    background-image: -ms-linear-gradient(to bottom right, #4eb4b7, #006366);
+    background-image: linear-gradient(to bottom right, #4eb4b7, #006366);
+    -moz-transition: max-width 0.5s ease;
+    -webkit-transition: max-width 0.5s ease;
+    -ms-transition: max-width 0.5s ease;
+    transition: max-width 0.5s ease;
+    }
+
+.wrapper.style3-alt {
+background-color: #3d9570;
+}
+    // ICONS
+    .wrapper.style3 .icon.major:before {
+        color: #000;
+    }
+    // IMAGE WRAP
+    .spotlights > section > .image:before {
+        background: rgba($color: #00282e, $alpha: 0.9)
+    }
+.background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+// REGION FONT-FACE
+    @font-face {
+        font-family: "Pantom_Black";
+        src: url(../fonts/PantonNarrowDemo-Black.otf);
+    }
+    @font-face {
+        font-family: "Pantom_BlackItalic";
+        src: url(../fonts/PantonDemo-BlackItalic.otf);
+    }
+    @font-face {
+        font-family: "Pantom_Light";
+        src: url(../fonts/PantonDemo-Light.otf);
+    }
+    @font-face {
+        font-family: "Pantom_LightItalic";
+        src: url(../fonts/PantonDemo-LightItalic.otf);
+    }
+    @font-face {
+        font-family: "SukhumvitSet_bold";
+        src: url(../fonts/SukhumvitSet-Bold.ttf)
+    }
+    @font-face {
+        font-family: "SukhumvitSet_light";
+        src: url(../fonts/SukhumvitSet-Light.ttf)
+    }
+    @font-face {
+        font-family: "SukhumvitSet_thin";
+        src: url(../fonts/SukhumvitSet-Thin.ttf)
+    }
+//END LOGO TEXT
+.intro_desc {
+    font-family: Pantom_black ;
+}
+
+// OTHER FONTS
+    @font-face {
+        font-family: "Tahu";
+        src: url(../fonts/Tahu.ttf);
+    }
+
+//  INICIO
+//_______________________
+.logo_font {
+    font-family: SukhumvitSet_bold;
+    letter-spacing: 30px; 
+}
+
+// SERVICES
+// ______________________
+.spotlights > section > .image {
+    background-image: none !important;
+}
+
+.spotlights > section > .image > video{
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+#box_service{
+    -webkit-transform: translateY(-1em);
+    transform: translateY(-1em);
+    height: 0px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    transition: all 0.5s ease;
+   
+    display: none;
+	width: 100%;
+	margin: auto;
+    opacity: 0;
+}
+#box_service.show {
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    opacity: 1;
+    height: 100%;
+    display: block;
+}
+#box_service div{
+    padding: 0em 5em;
+    margin-top:10px;
+}
+// VIDEO AND IMG
+.row > * {
+    padding : 0;
+}
+.row {
+    margin : 0;
+}
+.image_service {
+    display : block !important;
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+}
+
+.video_service {
+    display : block;
+}
+
+
+@media screen and (max-width: 980px){
+    .image_service {
+        padding : 1em 16em ;
+    }
+ }
+ @media screen and (max-width: 736px){
+    .image_service {
+        padding : 2em 10em ;  
+    }
+ }
+ @media screen and (max-width: 500px){
+    .image_service {
+        padding : 2em 6em ;  
+    }
+ }
+ @media screen and (max-width: 380px){
+    .image_service {
+        padding : 2em 4em ;  
+    }
+ }
+h6 {
+    font-weight: 100;
+    font-size: 2em;
+    font-family: Tahu;
+}
