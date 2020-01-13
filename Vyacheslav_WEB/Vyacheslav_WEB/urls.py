@@ -16,9 +16,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views  # Importamos las vistas de CORE Aquí
+# Importamos las configuraciones para controlar los archivos de /MEDIA
+from django.conf import settings
+
 
 urlpatterns = [
     # Definimos donde se va a mostrar nuestra vista en la URL
     path('', views.index, name="index"),
+    path('demo/', views.demo, name="demo"),
     path('admin/', admin.site.urls),
 ]
+
+# Configuramos el PATH en webempresa/urls.py para servir ficheros media en modo DEBUG:
+
+if settings.DEBUG:
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)

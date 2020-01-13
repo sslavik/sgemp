@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse
+from array import array
 
 # Create your views here.
 
@@ -10,3 +11,7 @@ from django.shortcuts import render, HttpResponse
 
 def index(request):
     return render(request, "core/home.html")
+
+
+def demo(request):
+    return render(request, "core/")
