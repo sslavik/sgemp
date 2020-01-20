@@ -83,6 +83,7 @@
 
 <!-- Servicios -->
 <section id="servicios" class="wrapper style2 spotlights">
+<<<<<<< HEAD
         <section class="">
                 <a class="image"><img class="image_service" src="{% static 'core/img/Silver.png' %}" alt=""
                         data-position="top center" /></a>
@@ -125,39 +126,29 @@
                     </div>
                 </div>
             </section>
+=======
+    {% for service in services %}
+>>>>>>> 0f64a180eb8d6c9e1a3c20fffe7577c52fe7ddcc
     <section class="">
-        <a class="image"><img class="image_service" src="{% static 'core/img/Silver.png' %}" alt=""
+        <a class="image"><img class="image_service" src="/static/core/img/{{service.image}}" alt=""
                 data-position="top center" /></a>
         <div class="content">
             <div class="inner">
-                <h2>Redes Sociales</h2>
-                <span class="list"><input type="radio" checked disabled /><label />Creación y Preservación de
-                    RRSS</span><br>
-                <span class="list"><input type="radio" checked disabled /><label />Organización de Ofertas,
-                    Sorteos y Eventos</span><br>
-                <span class="list"><input type="radio" checked disabled /><label />Mínimo 2 publicaciones /
-                    Semanales</span><br>
-                <span class="list"><input type="radio" checked disabled /><label />Aumento Seguidores e
-                    Impresiones</span><br>
-                <span class="list"><input type="radio" checked disabled /><label />Fidelizar Clientes</span><br>
+                <h2>{{ service.title }}</h2>
+                {% for subservice in service.subService.all  %}
+                <span class="list"><input type="radio" checked disabled /><label /> {{ subservice.name }}
+                </span><br>
+                {% endfor %}
                 <ul class="actions">
                     <li>
                         <a class="button toggle">Complementos</a>
                         <div id="box_service">
                             <div>
                                 <h6>Complementos</h6>
-                                <span class="list"><input type="radio" checked disabled /><label />Sesión
-                                    fotográfica de su Negocio / Empresa</span><br>
-                                <span class="list"><input type="radio" checked disabled /><label />Promociones
-                                    de publicaciones</span><br>
-                                <span class="list"><input type="radio" checked disabled /><label />Diseño
-                                    Logotipo</span><br>
-                                <span class="list"><input type="radio" checked disabled /><label />Propuesta de
-                                    ofertas</span><br>
-                                <span class="list"><input type="radio" checked disabled /><label />Posibilidad
-                                    de incrementar promoción en publicaciones</span><br>
-                                <span class="list"><input type="radio" checked disabled /><label />Aumento
-                                    Interacción</span><br>
+                                {% for feature in service.features.all %}
+                                <span class="list"><input type="radio" checked
+                                        disabled /><label />{{ feature.name }}</span><br>
+                                {% endfor %}
                             </div>
                         </div>
                     </li>
@@ -167,71 +158,7 @@
             </div>
         </div>
     </section>
-    <section class="">
-        <a class="image"><img class="image_service" src="{% static 'core/img/Gold.png' %}" alt=""
-                data-position="top center" /></a>
-        <div class="content">
-            <div class="inner">
-                <h2>Redes Sociales + Página Web</h2>
-                <span class="list"><input type="radio" checked disabled /><label />Creación de Página
-                    web</span><br>
-                <span class="list"><input type="radio" checked disabled /><label />1 Año Mantenimiento
-                    Gratis</span><br>
-                <span class="list"><input type="radio" checked disabled /><label />Aumentar valor de su empresa
-                    en Internet</span><br>
-                <span class="list"><input type="radio" checked disabled /><label />Posicionamiento
-                    SEO</span><br>
-                <span class="list"><input type="radio" checked disabled /><label />E-Commerce adaptado a su
-                    negocio / empresa</span><br>
-                <ul class="actions">
-                    <li>
-                        <a class="button toggle">Complementos</a>
-                        <div id="box_service">
-                            <div>
-                                <h6>Complementos</h6>
-                                <span class="list"><input type="radio" checked disabled /><label />Un mínimo de
-                                    4 Sub-Paginas</span><br>
-                                <span class="list"><input type="radio" checked disabled /><label /></span><br>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </section>
-    <section class="">
-        <a class="image"><img class="image_service" src="{% static 'core/img/Platinum.png' %}" alt=""
-                data-position="top center" /></a>
-        <div class="content">
-            <div class="inner">
-                <h2>Redes Sociales + Página web + App</h2>
-                <span class="list"><input type="radio" checked disabled /><label />Creación de App Web / Android
-                    &amp; iOs</span><br>
-                <span class="list"><input type="radio" checked disabled /><label />E-Commerce Con App</span><br>
-                <span class="list"><input type="radio" checked disabled /><label />Promociones directamente a su
-                    cliente</span><br>
-                <span class="list"><input type="radio" checked disabled /><label />Facilidad de acceso para los
-                    clientes</span><br>
-                <span class="list"><input type="radio" checked disabled /><label />Totalmente personalizada para
-                    su negocio / empresa</span><br>
-                <ul class="actions">
-                    <li>
-                        <a class="button toggle">Complementos</a>
-                        <div id="box_service">
-                            <div>
-                                <h6>Complementos</h6>
-                                <span class="list"><input type="radio" checked disabled /><label />Notificar a
-                                    lo clientes de cambio de horario</span><br>
-                                <span class="list"><input type="radio" checked disabled /><label />Interacciones
-                                    del cliente</span><br>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    {% endfor %}
 </section>
 
 

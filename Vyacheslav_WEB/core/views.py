@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from array import array
+from services.models import Service
 
 # Create your views here.
 
@@ -10,8 +11,5 @@ from array import array
 
 
 def index(request):
-    return render(request, "core/home.html")
-
-
-def demo(request):
-    return render(request, "core/")
+    services = Service.objects.all()
+    return render(request, "core/home.html", {'services': services})

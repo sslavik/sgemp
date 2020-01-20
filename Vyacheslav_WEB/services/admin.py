@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Service
+from .models import Service, SubService, Features
 
 # Register your models here.
 
@@ -9,5 +9,16 @@ from .models import Service
 class ServiceAdmin(admin.ModelAdmin):
     readonly_fields = ('created', 'updated')
 
-# Por ultimo se registran en el Admin los 
+
+class SubServiceAdmin(admin.ModelAdmin):
+    readonly_fields = ('created', 'updated')
+
+
+class FeaturesAdmin(admin.ModelAdmin):
+    readonly_fields = ('created', 'updated')
+
+
+# Por ultimo se registran en el Admin los
 admin.site.register(Service, ServiceAdmin)
+admin.site.register(SubService, SubServiceAdmin)
+admin.site.register(Features, FeaturesAdmin)

@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Zips
 *.iso
 *.zip
 
+=======
+#Zips
+*.zip
+*.iso
+>>>>>>> 0f64a180eb8d6c9e1a3c20fffe7577c52fe7ddcc
