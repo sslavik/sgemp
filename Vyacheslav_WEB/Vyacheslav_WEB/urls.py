@@ -23,7 +23,6 @@ from django.conf import settings
 urlpatterns = [
     # Definimos donde se va a mostrar nuestra vista en la URL
     path('', views.index, name="index"),
-    path('demo/', views.demo, name="demo"),
     path('admin/', admin.site.urls),
 ]
 
