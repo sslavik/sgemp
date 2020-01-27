@@ -28,7 +28,7 @@ SECRET_KEY = 'fd70ur=7%(#ch@_*!r-hurkmnx00uroot2dx71f#tlu70co4+_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["goodstampa.com"]
 
 
 # Application definition
@@ -179,7 +179,8 @@ INSTALLED_APPS = [
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'demo'
+    'demo',
+    'services'
 ]
 
 LANGUAGES = (

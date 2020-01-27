@@ -5,7 +5,7 @@
     class="nav-item {% if child.children and dropdown %}dropdown icon-dropdown{% endif %}{% if child.selected %} active{% endif %}">
     <a class="nav-link{% if child.children and dropdown %} dropdown-toggle{% endif %}"
         {% if child.children and dropdown %} data-toggle="dropdown" id="dropdown-{{ child.get_menu_title|slugify }}"
-        href="#" {% else %} href="#{{ default:child.get_absolute_url }}" {% endif %}>
+        href="#" {% else %} href="{{ child.attr.redirect_url|default:child.get_absolute_url }}" {% endif %}>
         {{ child.get_menu_title }}
     </a>
     {% if child.children and dropdown %}
